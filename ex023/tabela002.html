@@ -12,13 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgrey;
+            background-color: lightgray;
         }
 
         td, th {
@@ -27,8 +28,14 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd) {
@@ -53,7 +60,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
